@@ -58,6 +58,8 @@ https://github.com/akanametov/yolo-face?tab=readme-ov-file
 
 ## 🔄 Workflow
 
+Input Image -> YOLOv8 Face Detection -> Face Cropping -> FaceNet Embeddings -> SVM Classifier -> Recognized Person
+
 ---
 
 ## 📓 Notebook Structure (`main.ipynb`)
