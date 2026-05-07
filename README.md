@@ -57,3 +57,45 @@ https://github.com/akanametov/yolo-face?tab=readme-ov-file
 ---
 
 ## 🔄 Workflow
+
+---
+
+## 📓 Notebook Structure (`main.ipynb`)
+
+The notebook is organized step-by-step:
+
+### 1. Import Libraries
+- OpenCV, NumPy, TensorFlow/PyTorch, sklearn
+
+### 2. Load YOLOv8 Model
+- Load pretrained face detection model
+- Set confidence threshold
+
+### 3. Face Detection
+- Detect faces in images/video
+- Draw bounding boxes
+
+### 4. Face Extraction
+- Crop detected faces
+- Resize to required input size
+
+### 5. Face Embeddings (FaceNet)
+- Load FaceNet model
+- Convert face images → embeddings (vectors)
+
+### 6. Dataset Preparation
+- Store embeddings with labels
+- Create training dataset
+
+### 7. Train SVM Model
+- Train SVC classifier on embeddings
+- Save trained model
+
+### 8. Prediction / Recognition
+- Detect face → extract embedding → predict label
+- Display name on screen
+
+---
+
+## 📂 Project Structure
+![Structure](project_structure.png)
